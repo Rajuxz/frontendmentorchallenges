@@ -30,3 +30,23 @@ body{
     min-width: 375px;
     max-width: 1440px;
 }
+
+.card{
+    background:var(--dark-grey);
+    height: 520px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.card .card-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.card .card-top img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
