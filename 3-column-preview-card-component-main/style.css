@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan :  hsl(179, 100%, 13%);
+    --very-light-white:hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:hsl(0, 0%, 95%);
+}
+*{
+    font-family: 'Lexend Deca';
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: var(--very-light-white);
+}
+
+.container{
+    margin:100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 6px 25px grey;
+    width: 80%;
+    border-radius: 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.wrapper .content-box{
+    height: 450px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.wrapper .sedans{
+    background: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.wrapper .suvs{
+    background:var(--dark-cyan);
+}
+.wrapper .luxury{
+    background:var(--very-dark-cyan);
+    border-radius:0 10px 10px 0 ;
+}
+
+.wrapper p{
+    font-size: 15px;
+}
+.wrapper button{
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background: var(--very-light-gray);
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper button:hover{
+    background-color: transparent;
+    border: 1px solid var(--very-light-white);
+    color:var(--very-light-white);
+}
+
+@media screen and (max-width:769px){
+   .container{
+    box-shadow: none;
+   }
+   .container .wrapper{
+    display: flex;
+    flex-direction: column;
+   }
+   .wrapper .sedans{
+    background: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+    }
+    .wrapper .luxury{
+        background:var(--very-dark-cyan);
+        border-radius:0 0 10px 10px ;
+    }
+}
