@@ -76,3 +76,23 @@ body{
     font-weight: 600;
    
 }
+.list .items a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.list .items{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    background: var(--grey);
+    border-radius: 10px;
+    cursor: pointer;
+    caret-color: var(--off-black);
+    transition: all .5s ease-in-out;
+}
+
+.list .items:hover{
+    background: var(--green);
+}
+
