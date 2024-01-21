@@ -14,3 +14,19 @@
 *::after{
     box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+    background: var(--off-black);
+    color: var(--white);
+    font-family: Inter;
+}
+
+.container{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 375px;
+    max-width: 1440px;
+}
